@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simple Counting</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="head">Simple Counter</h1>
+        <button id="data" onclick="changename()">Change Name</button>
+        <h1 id="counting">0</h1>
+        <button onclick="increase()">Increase</button>
+        <button onclick="decrease()">Decrease</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+</body>
+<script>
+    let count = 0
+    function increase() {
+        count++
+        console.log(count)
+        document.getElementById("counting").innerText = count;
+    }
+    function decrease() {
+        count--
+        console.log(count)
+        document.getElementById("counting").innerText = count;
+
+    }
+    function reset() {
+        count = 0
+        console.log(count)
+        document.getElementById("counting").innerText = count;
+    }
+    function changename() {
+        let abc = document.getElementById("data")
+        head.innerText = "counter start!";
+    }
+</script>
+
+</html>
